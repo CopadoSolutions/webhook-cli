@@ -18,13 +18,13 @@ print ">>> copadoJobId is %s" % jobId
 isFinished = False
 isSuccess = False
 data = None
+parts = urlparse.urlparse(url)
+query = urlparse.parse_qs(parts.query)
+api_key = query['api_key'][0]
+statusUrl = "%s://%s/json/v1/webhook/jobStatus/%s?api_key=%s" % (parts.scheme, parts.netloc, jobId, api_key)
 print ""
 while not isFinished:
 	time.sleep(5)
-	parts = urlparse.urlparse(url)
-	query = urlparse.parse_qs(parts.query)
-	api_key = query['api_key'][0]
-	statusUrl = "%s://%s/json/v1/webhook/jobStatus/%s?api_key=%s" % (parts.scheme, parts.netloc, jobId, api_key)
 	print "calling %s" % statusUrl
 	response = urllib.urlopen(statusUrl)
 	jsontext = response.read()
