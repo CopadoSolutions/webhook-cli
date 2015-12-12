@@ -1,6 +1,6 @@
 Command Line Interface for the Copado Webhook API
 -------------
-With this simple program, you will be able to start a Copado jobs and wait for its completion. The process will exit gracefully if the job was successfull or fail exit(1) otherwise.
+With this simple program, you will be able to start a Copado job and wait for its completion. The process will exit gracefully if the job was successfull or fail exit(1) otherwise.
 
 
 ## Installing
