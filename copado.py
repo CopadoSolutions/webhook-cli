@@ -38,7 +38,7 @@ while not isFinished:
 	print ""
 isSuccess = data["isSuccess"]
 if isSuccess:
-	print "FINISHED SUCCESSLFULLY"
+	print "FINISHED SUCCESSFULLY"
 else:
 	print "FAILURE %s" % data["messages"]
 	sys.exit(1)
