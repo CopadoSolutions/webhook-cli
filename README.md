@@ -17,5 +17,5 @@ With this simple program, you will be able to start a Copado job and wait for it
 3. In the ```URL``` parameter, paste the Webhook URL and make sure that Salesforce Ids and API Key parameter are set.
 
 ## Change Log
-2017-Jan-21: Clean up log messages.
+2017-Jan-21: Clean up log messages
 2015-Dec-10: First release
