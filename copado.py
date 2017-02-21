@@ -1,9 +1,10 @@
+#! /usr/bin/env python
 import argparse, urllib, json, time, urlparse, sys
 
 parser = argparse.ArgumentParser(description='Copado Webhook API. Command Line Interface.',
 	epilog='More information at http://docs.copado.apiary.io and http://docs.copa.do',
 	prog='copado')
-parser.add_argument('-url', dest='url', required=True, nargs=1,
+parser.add_argument('--url', dest='url', required=True, nargs=1,
                    help='Copado Webhook URL.')
 args = parser.parse_args()
 url = args.url[0]
@@ -32,11 +33,10 @@ while not isFinished:
 	print jsontext
 	print ""
 	data = json.loads(jsontext)
-	isFinished = data["isFinished"]
+	isFinished = data["isFinished"] == True
 	print ">>> status: %s" % data["status"]
-	print ">>> isFinished is %s" % isFinished
 	print ""
-isSuccess = data["isSuccess"]
+isSuccess = data["isSuccess"] == True
 if isSuccess:
 	print "FINISHED SUCCESSFULLY"
 else:
