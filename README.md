@@ -13,7 +13,7 @@ With this simple program, you will be able to start a Copado job and wait for it
  
 ## Usage
 1. Open your console.
-2. Type: ```$>python copado.py --url URL```
+2. Type: ```$>./copado.py --url URL```
 3. In the ```URL``` parameter, paste the Webhook URL and make sure that Salesforce Ids and API Key parameter are set.
 
 ## Change Log
