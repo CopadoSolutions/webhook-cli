@@ -9,12 +9,13 @@ With this simple program, you will be able to start a Copado job and wait for it
 
 ## Prerequisites
 * **Webhook URL** - review Webhook API  ```http://docs.copado.apiary.io```
-* **API Key** - in order for the plugin to start the Job and check on the status (via the Copado Webhook API), it requires an API key. To create an api key, login to your Copado account and navigate to the Account Summary tab, and finally on the API Key sub-tab.
+* **API Key** - in order for the plugin to start the Job and check on the status (via the Copado Webhook API), it requires an API key. To create an api key, login to your Copado account and navigate to the Account Summary tab, and finally on the API Key sub-tab use the button "create/reset".
  
 ## Usage
 1. Open your console.
-2. Type: ```$>python copado.py -url URL```
+2. Type: ```$>python copado.py --url URL```
 3. In the ```URL``` parameter, paste the Webhook URL and make sure that Salesforce Ids and API Key parameter are set.
 
 ## Change Log
+2017-Jan-21: Clean up log messages.
 2015-Dec-10: First release
