@@ -4,8 +4,11 @@ With this simple program, you will be able to start a Copado job and wait for it
 
 
 ## Installing
-1. Download copado.py or clone this repo.
-2. That's it.
+Download copado.py or clone this repo.
+
+```curl https://raw.githubusercontent.com/CopadoSolutions/webhook-cli/master/copado.py --out copado.py```
+
+```chmod +x copado.py```
 
 ## Prerequisites
 * **Webhook URL** - review Webhook API  ```http://docs.copado.apiary.io```
@@ -15,6 +18,9 @@ With this simple program, you will be able to start a Copado job and wait for it
 1. Open your console.
 2. Type: ```$>./copado.py --url URL```
 3. In the ```URL``` parameter, paste the Webhook URL and make sure that Salesforce Ids and API Key parameter are set.
+
+## Example
+```./copado.py --url https://copado-eu.herokuapp.com/json/v1/webhook/gitSnapshot/a10f2000006O84F?api_key=XXXXXXXXXX```
 
 ## Change Log
 * 2017-Jan-21: Clean up log messages and command line parameter
